@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Around the U.S.</title>
+  <meta name="description" content="An interactive page where users can add, remove, or like photos">
+  <meta name="keywords" content="photos, interactive, U.S. places">
+  <meta name="author" content="Maria Wright">
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body class="page">
+
+  <div class="page__container">
+
+    <header class="header">
+      <img class="logo" src="./images/usa-logo-white.svg" alt="Around the US logo">
+    </header>
+
+    <main>
+
+      <section class="profile">
+        <div class="profile__user-container">
+          <img class="profile__user-avatar" src="./images/avatar.jpg" alt="Jacques Cousteau avatar">
+          <div class="profile__user-info">
+            <h1 class="profile__user-name">Jacques Cousteau</h1>
+            <p class="profile__user-about">Explorer</p>
+            <button class="profile__edit-button"></button>
+          </div>
+        </div>
+        <button class="profile__add-button"></button>
+      </section>
+
+      <section>
+        <ul class="photo-grid">
+          <li class="photo-grid__item">
+            <div class="photo-grid__image" style="background-image: url('./images/yosemite-valley.jpg')"></div>
+            <div class="photo-grid__title-container">
+              <h2 class="photo-grid__title">Yosemite Valley</h2>
+              <div class="photo-grid__like"></div>
+            </div>
+          </li>
+          <li class="photo-grid__item">
+            <div class="photo-grid__image" style="background-image: url('./images/lake-louis.jpg')"></div>
+            <div class="photo-grid__title-container">
+              <h2 class="photo-grid__title">Lake Louise</h2>
+              <div class="photo-grid__like"></div>
+            </div>
+          </li>
+          <li class="photo-grid__item">
+            <div class="photo-grid__image" style="background-image: url('./images/bald-mountains.jpg')"></div>
+            <div class="photo-grid__title-container">
+              <h2 class="photo-grid__title">Bald mountains</h2>
+              <div class="photo-grid__like"></div>
+            </div>
+          </li>
+          <li class="photo-grid__item">
+            <div class="photo-grid__image" style="background-image: url('./images/latemar.jpg')"></div>
+            <div class="photo-grid__title-container">
+              <h2 class="photo-grid__title">Latemar</h2>
+              <div class="photo-grid__like"></div>
+            </div>
+          </li>
+          <li class="photo-grid__item">
+            <div class="photo-grid__image" style="background-image: url('./images/vanois-national.jpg')"></div>
+            <div class="photo-grid__title-container">
+              <h2 class="photo-grid__title">Vanois National Park</h2>
+              <div class="photo-grid__like"></div>
+            </div>
+          </li>
+          <li class="photo-grid__item">
+            <div class="photo-grid__image" style="background-image: url('./images/lago-di-braies.jpg')"></div>
+            <div class="photo-grid__title-container">
+              <h2 class="photo-grid__title">Lago di Braies</h2>
+              <div class="photo-grid__like"></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">&copy; 2020 Around The U.S.</p>
+    </footer>
+
+  </div> <!--page__container-->
+
+  <div class="popup">
+    <div class="popup__container">
+      <button class="popup__close-button"></button>
+      <form action="#" class="popup__form">
+        <h3 class="popup__heading">Edit profile</h3>
+        <fieldset class="popup__info">
+          <input type="text" name="name" class="popup__field popup__field_type_name" placeholder="Name">
+          <input type="text" name="title" class="popup__field popup__field_type_title" placeholder="About me">
+        </fieldset>
+        <input type="submit" class="popup__save-button" value="Save">
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
